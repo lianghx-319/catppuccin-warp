@@ -40,7 +40,7 @@ for (let [flavour, colors] of Object.entries(variants)) {
     },
   };
   Deno.writeTextFileSync(
-    `./dist/catppuccin_${flavour}.yml`,
+    `./catppuccin_${flavour}.yml`,
     yamlStringify(theme),
   );
 }
